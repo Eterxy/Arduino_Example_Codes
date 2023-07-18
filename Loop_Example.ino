@@ -1,3 +1,5 @@
+#include <Adafruit_SSD1306>
+
 void setup() {
   // put your setup code here, to run once:
 
@@ -7,16 +9,16 @@ void setup() {
   sum = x + y;
 
   //running the same code '3' times without using a loop
-  Serial.println(sum += sum);
-  Serial.println(sum += sum);
-  Serial.println(sum += sum);
+  display.println(sum += sum);
+  display.println(sum += sum);
+  display.println(sum += sum);
 
   delay(10000);
 
   //using a loop to run the same code '3' times
   sum = x + y;
   for (int i = 0; i < 3; i++){
-    Serial.println(sum += sum);
+    display.println(sum += sum);
   }
 
 }
@@ -27,5 +29,5 @@ void loop() {
   x = 3;
   y = 2;
   sum = x + y;
-  Serial.println(sum += sum);
+  display.println(sum += sum);
 }
