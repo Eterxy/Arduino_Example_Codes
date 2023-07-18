@@ -23,5 +23,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  int sum, x , y;
+  x = 3;
+  y = 2;
+  sum = x + y;
+  Serial.println(sum += sum);
 }
