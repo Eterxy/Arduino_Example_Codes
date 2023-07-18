@@ -9,16 +9,16 @@ void setup() {
   sum = x + y;
 
   //running the same code '3' times without using a loop
-  display.println(sum += sum);
-  display.println(sum += sum);
-  display.println(sum += sum);
+  Serial.println(sum += sum);
+  Serial.println(sum += sum);
+  Serial.println(sum += sum);
 
   delay(10000);
 
   //using a loop to run the same code '3' times
   sum = x + y;
   for (int i = 0; i < 3; i++){
-    display.println(sum += sum);
+    Serial.println(sum += sum);
   }
 
 }
@@ -29,5 +29,5 @@ void loop() {
   x = 3;
   y = 2;
   sum = x + y;
-  display.println(sum += sum);
+  Serial.println(sum += sum);
 }
